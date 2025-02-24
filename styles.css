@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Mulish', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -21,7 +21,7 @@ a:hover {
 }
 
 /* Header */
-header {
+.site-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,17 +30,17 @@ header {
     color: #fff;
 }
 
-header .logo img {
+.site-header .logo {
     height: 50px;
 }
 
-header nav ul {
+.site-header nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
-header nav ul li a {
+.site-header nav ul li a {
     color: #fff;
     font-weight: bold;
 }
@@ -179,13 +179,13 @@ header nav ul li a {
 }
 
 /* Footer */
-footer {
+.site-footer {
     text-align: center;
     padding: 20px;
     background-color: #2c3e50;
     color: #fff;
 }
 
-footer p {
+.site-footer p {
     margin: 5px 0;
 }
