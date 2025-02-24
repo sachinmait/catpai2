@@ -13,3 +13,11 @@ document.getElementById('enroll-form').addEventListener('submit', function(event
         alert('Please fill out all fields.');
     }
 });
+
+// Initialize AOS (Animate On Scroll)
+AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true,
+    disable: 'mobile'
+});
