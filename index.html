@@ -1,143 +1,212 @@
-<!DOCTYPE HTML>
-<html lang="en" prefix="og: https://ogp.me/ns#">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="robots" content="noindex">
-    <title>CATPAI Executive Program - Transform Your Future with AI</title>
-    <meta name="description" content="Join the CATPAI Executive Program to upskill in Artificial Intelligence. A 6-week online course designed for professionals and graduates to master AI applications across industries.">
-    <meta name="keywords" content="AI, Artificial Intelligence, CATPAI, Executive Program, AI Certification, AI Training">
-    <meta property="og:url" content="https://www.catpai-program.com">
-    <meta property="og:title" content="CATPAI Executive Program - Transform Your Future with AI">
-    <meta property="og:description" content="Join the CATPAI Executive Program to upskill in Artificial Intelligence. A 6-week online course designed for professionals and graduates to master AI applications across industries.">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="CATPAI Executive Program">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:image" content="https://www.catpai-program.com/images/ogp.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="CATPAI Executive Program - Transform Your Future with AI">
-    <meta name="twitter:description" content="Join the CATPAI Executive Program to upskill in Artificial Intelligence. A 6-week online course designed for professionals and graduates to master AI applications across industries.">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
+    <title>CATPAI - AI Executive Program</title>
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    <link rel="stylesheet" href="styles.css">
+        /* Header Section */
+        .header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                        url('https://images.unsplash.com/photo-1619410283995-663d46efac71?auto=format&fit=crop&w=1920') center/cover;
+            height: 100vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .program-title {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        /* Program Highlights */
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 4rem 2rem;
+            background: #f8f9fa;
+        }
+
+        .highlight-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        /* Modules Section */
+        .modules {
+            padding: 4rem 2rem;
+        }
+
+        .module-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .module-card {
+            border-left: 4px solid #2c3e50;
+            padding: 1.5rem;
+            background: #f8f9fa;
+        }
+
+        /* Tools Section */
+        .tools {
+            background: #2c3e50;
+            color: white;
+            padding: 4rem 2rem;
+        }
+
+        .tool-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .tool-card {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* Enrollment Form */
+        .enrollment {
+            padding: 4rem 2rem;
+            background: #f8f9fa;
+            text-align: center;
+        }
+
+        .form-group {
+            margin: 1rem auto;
+            max-width: 500px;
+        }
+
+        input {
+            width: 100%;
+            padding: 0.8rem;
+            margin-top: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .program-title {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="site-header">
-        <div class="container">
-            <div class="header-left">
-                <img src="images/logo.png" alt="CATPAI Logo" class="logo">
-            </div>
-            <nav class="header-right">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#modules">Modules</a></li>
-                    <li><a href="#enroll">Enroll</a></li>
-                </ul>
-            </nav>
+    <header class="header">
+        <h1 class="program-title">Certified Advanced Technology Professional in AI</h1>
+        <p>6-Week Executive Program | Starts Every Saturday</p>
+        <div style="margin-top: 2rem;">
+            <button onclick="scrollToEnrollment()">Enroll Now</button>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Transform Your Future with AI</h1>
-                <p>Join the CATPAI Executive Program and unlock your professional potential in Artificial Intelligence.</p>
-                <a href="#enroll" class="cta-button">Enroll Now</a>
-            </div>
-            <div class="hero-image">
-                <img src="images/banner.jpg" alt="AI Technology">
-            </div>
+    <section class="highlights">
+        <div class="highlight-card">
+            <h3>Program Duration</h3>
+            <p>6 Weeks (Saturday Sessions)</p>
+        </div>
+        <div class="highlight-card">
+            <h3>Learning Format</h3>
+            <p>Live Online Sessions</p>
+        </div>
+        <div class="highlight-card">
+            <h3>Certification</h3>
+            <p>CATPAI Accreditation</p>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About the Program</h2>
-            <p>The CATPAI Executive Program is a 6-week online course designed to help professionals and graduates upskill in AI. With live sessions, hands-on projects, and expert guidance, you'll gain the knowledge and certification to excel in the AI-driven world.</p>
-            <div class="program-details">
-                <h3>Program Details</h3>
-                <ul>
-                    <li><strong>Duration:</strong> 6 Weeks (Every Saturday)</li>
-                    <li><strong>Session Timing:</strong> 10 AM to 1 PM</li>
-                    <li><strong>Delivery Mode:</strong> Online (Live)</li>
-                    <li><strong>Program Fee:</strong> 15,000 INR + GST</li>
-                    <li><strong>Eligibility:</strong> Open to professionals & graduates</li>
-                </ul>
+    <section class="modules">
+        <h2>Program Modules</h2>
+        <div class="module-grid">
+            <div class="module-card">
+                <h3>AI Foundations</h3>
+                <p>Global impact and industry applications across 20+ sectors</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Modules Section -->
-    <section id="modules" class="modules">
-        <div class="container">
-            <h2>Program Modules</h2>
-            <div class="module-list">
-                <div class="module">
-                    <h3>Module 1: Artificial Intelligence - Global Game Changer</h3>
-                    <p>Explore the impact of AI on various industries and learn about generative AI applications.</p>
-                </div>
-                <div class="module">
-                    <h3>Module 2: Introduction to Large Language Models</h3>
-                    <p>Understand LLMs like ChatGPT, Gemini, and CoPilot, and master prompt engineering.</p>
-                </div>
-                <div class="module">
-                    <h3>Module 3: Applicability of Generative AI in Business</h3>
-                    <p>Learn how AI can automate customer service, enhance marketing, and optimize business processes.</p>
-                </div>
-                <div class="module">
-                    <h3>Module 4: AI in Creative Arts, Media, and Education</h3>
-                    <p>Discover AI-powered tools for design, video production, and education.</p>
-                </div>
-                <div class="module">
-                    <h3>Module 5: Customizing Your Work with AI</h3>
-                    <p>Integrate AI into existing systems and develop custom AI solutions for your business.</p>
-                </div>
-                <div class="module">
-                    <h3>Module 6: Ethical & Legal Implications of AI</h3>
-                    <p>Address AI bias, intellectual property rights, and regulatory compliance.</p>
-                </div>
+            <div class="module-card">
+                <h3>LLM Mastery</h3>
+                <p>Practical work with ChatGPT, Gemini, and prompt engineering</p>
             </div>
+            <!-- Add remaining modules following same pattern -->
         </div>
     </section>
 
-    <!-- Enroll Section -->
-    <section id="enroll" class="enroll">
-        <div class="container">
-            <h2>Enroll Now</h2>
-            <p>Secure your spot in the CATPAI Executive Program today. Limited seats available!</p>
-            <form id="enroll-form">
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Your Email" required>
-                <input type="tel" id="phone" placeholder="Your Phone Number" required>
-                <button type="submit">Submit</button>
-            </form>
+    <section class="tools">
+        <h2>Industry-Standard Tools</h2>
+        <div class="tool-grid">
+            <div class="tool-card">
+                <img src="chatgpt-icon.png" alt="ChatGPT" style="height: 50px;">
+                <p>ChatGPT</p>
+            </div>
+            <!-- Add remaining tools following same pattern -->
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2023 Maharaja Agrasen Technical Education Society (MATES). All rights reserved.</p>
-            <p>Contact: 98xxxxxxxxx | catpai@mail.ac.in</p>
-        </div>
-    </footer>
+    <section class="enrollment" id="enrollment">
+        <h2>Start Your AI Journey</h2>
+        <form id="enrollmentForm" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+                <input type="text" placeholder="Full Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Email Address" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" placeholder="Phone Number" required>
+            </div>
+            <button type="submit">Secure Your Seat</button>
+        </form>
+    </section>
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js"></script>
+    <script>
+        function scrollToEnrollment() {
+            document.getElementById('enrollment').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Thank you for your application! We will contact you shortly.');
+            event.target.reset();
+        }
+    </script>
 </body>
 </html>
